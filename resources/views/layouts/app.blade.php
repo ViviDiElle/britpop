@@ -26,7 +26,7 @@
           <a class="nav-link" href="{{ url('/labels')}}">Record Labels</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url('/contatti')}}">Contact us</a>
+          <a class="nav-link" href="{{ url('/contact')}}">Contact us</a>
         </li>
       </ul>
     </div>

@@ -19,6 +19,8 @@ use App\Http\Controllers\ArtistController;
 use App\Http\Controllers\LabelController;
 use App\Http\Controllers\AlbumController;
 
+use App\Http\Controllers\ContactController;
+
 /*Route::get('/', function () {
     return view('layouts.home');
 });*/
@@ -31,11 +33,16 @@ Route::get('/labels', function () {
     return view('layouts.labels');
 });
 
-Route::get('/contatti', function () {
-    return view('layouts.contatti');
+Route::get('/contact', function () {
+    return view('layouts.contact');
 });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::resource('artists', ArtistController::class);
 Route::resource('labels', LabelController::class);
 Route::resource('albums', AlbumController::class);
+
+
+Route::post('/sendmail', [ContactController::class, 'sendmail'])->name('sendmail');
+
+
