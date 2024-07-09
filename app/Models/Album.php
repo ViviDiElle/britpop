@@ -9,9 +9,12 @@ class Album extends Model
 {
     use HasFactory;
 
-    public function artist()
-{
-    return $this->belongsTo(Artist::class);
-}
+    public $timestamps = false;
 
+    protected $fillable = ['title', 'artist_id', 'year', 'record_label_id'];
+
+    public function artist()
+    {
+        return $this->belongsTo(Artist::class);
+    }
 }

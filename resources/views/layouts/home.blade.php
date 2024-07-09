@@ -4,8 +4,8 @@
 
 @section('content')
 <div class="container">
-    <h1>Homepage</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet fugit perferendis rerum laudantium sunt sed consectetur sit atque officiis, dignissimos dolor? Tenetur et saepe possimus voluptate, quas libero reiciendis incidunt!</p>
+    <h1>Tied to the 90s</h1>
+    <p>Let's dive into some of the greatest Britpop bands and albums from the 90s!</p>
 
     <h2>Bands</h2>
     <ul class="list-group">
