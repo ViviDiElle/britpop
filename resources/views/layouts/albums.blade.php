@@ -22,6 +22,7 @@
                     <td>{{ $album->artist->name }}</td>
                     <td>{{ $album->year }}</td>
                     <td>
+                        <a href="{{ route('albums.show', $album) }}" class="btn btn-info">Dettagli</a>
                         <a href="{{ route('albums.edit', $album) }}" class="btn btn-warning">Modifica</a>
                         <form action="{{ route('albums.destroy', $album) }}" method="POST" style="display: inline;" onsubmit="return confirm('Sei sicuro di voler eliminare questo album?');">
                             @csrf
