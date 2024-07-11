@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <!-- Inserisci qui il codice per visualizzare il messaggio di successo -->
+    
     @if (session('success'))
         <div class="alert alert-success">
             {{ session('success') }}

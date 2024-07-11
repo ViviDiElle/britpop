@@ -10,8 +10,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $artists = Artist::all(); // Ottieni tutti gli artisti dal database
-        return view('layouts.home', ['bands' => $artists]); // Passa gli artisti alla vista
+        $artists = Artist::all(); 
+        return view('layouts.home', ['bands' => $artists]); 
     }
 }
 

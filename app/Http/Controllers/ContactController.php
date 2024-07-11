@@ -52,10 +52,6 @@ class ContactController extends Controller
     {
         $data = $request->all();
 
-        // Commenta la riga che invia l'email
-        // Mail::to('your-email@example.com')->send(new ContactMail($data));
-
-        // Aggiungi un messaggio di log o un output di debug
         \Log::info('Email inviata con successo!', $data);
 
         return back()->with('success', 'Email inviata con successo!');
