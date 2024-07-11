@@ -38,6 +38,8 @@ Route::get('/contact', function () {
 });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/home/artist/{id}', [HomeController::class, 'show'])->name('home.artist.show');
+
 Route::resource('artists', ArtistController::class);
 Route::resource('labels', LabelController::class);
 Route::resource('albums', AlbumController::class);
